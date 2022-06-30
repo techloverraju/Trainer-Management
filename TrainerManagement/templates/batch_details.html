@@ -1,0 +1,27 @@
+{% extends 'adminnavbar.html' %}
+
+
+{% block content %}
+<div align="center">
+    <h2> Batch Details</h2>
+    <table id="customers">
+        <tr>
+            <th>Trainer_name</th>
+            <th>Batch No</th>
+            <th>Course</th>
+            <th>Date</th>
+        </tr>
+        {% for i in data %}
+            <tr>
+                <td>{{i.tname}}</td>
+                <td>{{i.batchno}}</td>
+                <td>{{i.course}}</td>
+                <td>{{i.date}}</td>
+                <td><a href="{% url 'up' i.id %}">Update</a></td>
+                <td><a href="{% url 'del' i.id %}">Delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

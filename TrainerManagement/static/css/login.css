@@ -1,0 +1,20 @@
+#div1{
+    background-color: grey;
+    border:2px groove red;
+    margin-top: 170px;
+    margin-left: 680px;
+    margin-right: 50px;
+    color: Black;
+    font-size:30px;
+}
+body{
+    font-size:50px;
+    color:Black;
+    background-size: 1500px 700px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+label{
+    font-size:30px;
+}

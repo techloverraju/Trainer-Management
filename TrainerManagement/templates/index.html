@@ -1,0 +1,33 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+</head>
+<body style="background-image: url('{% static 'images/log1.jpg'%}');">
+    <form method="post" action="logread">
+        {% csrf_token %}
+        <div align="center" id="div1">
+            <h1> Login Page</h1>
+            <table>
+                <tr>
+                    <td><label>UserName:</label></td>
+                    <td><input type="text" name="txtname"</td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" name="txtpswd"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login" name="btnsub"></td>
+                    <td><a href="{% url 'reg' %}">Click here to Register</a></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+</body>
+</html>

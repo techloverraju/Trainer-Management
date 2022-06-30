@@ -1,0 +1,22 @@
+{% extends 'adminnavbar.html' %}
+
+{% block content %}
+<div align="center">
+    <h2> Trainer Details</h2>
+    <table border="2" cellspacing="0">
+        <tr>
+            <th> Trainer_name</th>
+            <th>Trainer_phno</th>
+            <th>Trainer_email</th>
+        </tr>
+        {% for i in data %}
+            <tr>
+                <td> {{i.tname}}</td>
+                <td> {{i.tphone}}</td>
+                <td> {{i.temail}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

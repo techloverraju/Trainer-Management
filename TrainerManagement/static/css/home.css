@@ -1,0 +1,14 @@
+#div1{
+    background-color: grey;
+}
+body{
+    font-size:50px;
+    color:White;
+    background-size: 100px 70px;
+    background-repeat: no-repeat;
+    background-position: middle;
+    background-attachment: fixed;
+}
+label{
+    font-size:30px;
+}
